@@ -1,0 +1,71 @@
+  <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Say no to Drugs" >
+<meta name="author" content="Changli" />
+<meta http-equiv="Cache-Control" content="no-transform" /> 
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="viewport" content="width=device-width, height=device-height,user-scalable=no, initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="x5-fullscreen" content="false">
+<meta name="x5-page-mode" content="app">
+<meta name="x5-orientation" content="portrait">
+
+<script type="text/javascript" src="scripts/jquery-2.0.3.min.js"></script>
+
+<link rel="shortcut icon" href="images/icon.png">
+<link rel="stylesheet" href="images/index.css">
+<title>珍爱生命,远离毒品</title>
+</head>
+
+<body style="height: 100%;width: 100%;margin: 0;padding: 0;">
+
+ <!-- <body> -->
+<div id="extra"></div>
+<!-- <em> -- Fruit Ninja -- </em>
+<em> The game is developed by the Baidu JS team, </em>
+<em> we provide the source in git: https://github.com/ChineseDron/fruit-ninja </em>
+<em> follow me on weibo http://weibo.com/baidujs </em>
+<em> or learn more, to see http://tangram.baidu.com </em> -->
+<a id="fork" href="https://github.com/ChineseDron/fruit-ninja" target="_blank"></a>
+<canvas id="view" style=" height: device-width;width: device-height;margin: 0;padding: 0;display: block;"></canvas>
+
+<div id="desc">
+	<div>为了您的健康，远离毒品！<a href="#" target="_blank">紫云县公安局</a>宣</div>
+	<div id="browser"></div>
+</div>
+
+<script src="scripts/all.js"></script>  <!-- 引入全部JS文件 --> 
+<!-- <script src="js/adaptive.js"></script>  // IOS有缩放，安卓没缩放
+<script src="js/adaptive-version2.js"></script> // IOS,安卓都没有缩放，能快速开发的版本
+<script src="js/adaptive-version3.js"></script>// 无论iphone还是安卓手机，都能精确还原1px -->
+<script type="text/javascript">
+	// 设计图宽为640,,,
+	// window['adaptive'].desinWidth = 640;
+ //    window['adaptive'].baseFont = 18;
+ //    // 设置最大宽度
+     //window['adaptive'].maxWidth = 480;
+    //window['adaptive'].init();
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth >= 640) {
+                    docEl.style.fontSize = '100px';
+                } else {
+                    docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                }
+            };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>
